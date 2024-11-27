@@ -1,0 +1,56 @@
+[
+  {
+    "model": "accounts.mycard",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "card_name": "신한카드",
+      "card_type": "신용카드",
+      "company": "신한카드사",
+      "benefit": "캐시백, 포인트 적립",
+      "anual_fee": 30000.00
+    }
+  },
+  {
+    "model": "accounts.mycard",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "card_name": "삼성카드",
+      "card_type": "체크카드",
+      "company": "삼성카드사",
+      "benefit": "할인, 마일리지 적립",
+      "anual_fee": 10000.00
+    }
+  },
+  {
+    "model": "accounts.myaccount",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "account_name": "하나은행 어쩌고 저쩌고",
+      "company": "하나은행",
+      "account_type": "자유입출금"
+    }
+  },
+  {
+    "model": "accounts.myaccount",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "account_name": "국민은행 어쩌고 저쩌고2",
+      "company": "국민은행",
+      "account_type": "자유입출금"
+    }
+  },
+  {
+    "model": "accounts.myaccount",
+    "pk": 3,
+    "fields": {
+      "user": 1,
+      "account_name": "신한은행 어쩌고 저쩌고2",
+      "company": "신한은행",
+      "account_type": "적금"
+    }
+  }
+]

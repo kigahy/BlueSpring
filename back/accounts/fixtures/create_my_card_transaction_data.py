@@ -1,0 +1,59 @@
+from faker import Faker
+import random
+import json
+from datetime import datetime, timedelta
+
+# Faker 객체 초기화
+fake = Faker()
+
+# 거래 내역을 담을 리스트
+transactions = []
+
+# 시작 날짜를 2024년 10월 1일로 설정
+start_date = datetime(2024, 10, 1)
+pk = int(input('start pk').strip())
+user_id = int(input('user pk').strip())
+card_id = int(input('card pk').strip())
+
+# 10월 1일부터 10월 31일까지 각 날짜에 대해 거래 생성
+for day in range(31):  # 31일 동안 반복 (10월 1일부터 31일까지)
+    current_date = start_date + timedelta(days=day)
+
+    # 시간 변수 초기화 (기준 시간이 될 현재 시간)
+    current_time = datetime.combine(current_date, datetime.min.time())
+    total_seconds = 0  # 총 누적 초를 초기화
+
+    # 하루에 랜덤 수(20~100) 개의 거래를 생성
+    while total_seconds < 86400:  # 86400초 (24시간) 이내로 거래를 생성
+        # 거래 시간이 오름차순으로 증가하도록 설정
+        random_seconds = random.randint(1, 3599)  # 1초에서 1시간(3600초) 사이의 랜덤 초를 추가
+        total_seconds += random_seconds  # 총 누적 초에 더함
+
+        # 만약 하루를 넘어가는 경우, 생성 중지
+        if total_seconds >= 86400:
+            break
+
+        # 새로운 거래 시간
+        transaction_time = current_time + timedelta(seconds=total_seconds)
+
+        # 거래 생성
+        transaction = {
+            "model": "accounts.mycardtransaction",
+            "pk": pk,  # 각 거래의 pk는 고유하도록 설정 (1부터 1000, 1001부터 2000 등)
+            "fields": {
+                "user": user_id,  # 유저 ID
+                "card": card_id,  # 카드 ID
+                "transaction_date": current_date.date().isoformat(),  # 날짜
+                "transaction_time": transaction_time.time().isoformat(),  # 시간
+                "money_amount": round(random.uniform(5000.00, 100000.00), 2),  # 5,000~100,000 사이 랜덤 금액
+                "content": fake.sentence(),  # 랜덤 거래 내용
+            }
+        }
+        transactions.append(transaction)
+        pk += 1
+
+# 생성된 데이터를 JSON 형식으로 저장
+with open('card_transaction_data.json', 'w') as f:
+    json.dump(transactions, f, indent=2)
+
+print(f"create crad transaction data")

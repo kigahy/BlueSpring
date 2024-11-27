@@ -1,0 +1,57 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+venv/
+.env/
+
+# Django stuff:
+*.log
+db.sqlite3
+media/
+
+# Local configuration
+*.env
+
+# macOS metadata files
+.DS_Store
+
+# Node.js / Vue.js
+node_modules/
+dist/
+*.log
+!.env.local
+!.env.development.local
+!.env.test.local
+!.env.production.local
+
+# Yarn
+yarn.lock
+.pnp.*
+.pnpjs/
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Dependency directories
+node_modules/
+
+# Build directories
+dist/
+*.out
+
+# Testing
+coverage/
+*.lcov
+
+# Temporary files
+*.tmp
+*.temp

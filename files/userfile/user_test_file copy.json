@@ -1,0 +1,582 @@
+[
+  {
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+      "username": "admin",
+      "password": "1234",
+      "is_staff": 1,
+      "name": "홍길동",
+      "nick_name": "홍상",
+      "age": 28,
+      "gender": "남성",
+      "phone_number": "010-1234-5678",
+      "job": "소프트웨어 개발자",
+      "interest": "기획·전략",
+      "assets_amount": 5000000,
+      "salary": 60000000,
+      "email": "admin@mail.com",
+      "education": "대학원"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+      "username": "user2",
+      "password": "password456",
+      "name": "김영희",
+      "nick_name": "영희",
+      "age": 32,
+      "gender": "여성",
+      "phone_number": "010-2345-6789",
+      "job": "기자",
+      "interest": "마케팅·홍보·조사",
+      "assets_amount": 3000000,
+      "salary": 36000000,
+      "email": "user2@mail.com",
+      "education": "4년제"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+      "username": "user3",
+      "password": "password789",
+      "name": "이철수",
+      "nick_name": "철수",
+      "age": 25,
+      "gender": "남성",
+      "phone_number": "010-3456-7890",
+      "job": "영업사원",
+      "interest": "회계·세무·재무",
+      "assets_amount": 2000000,
+      "salary": 40000000,
+      "email": "user3@example.com",
+      "education": "고등학교"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 4,
+    "fields": {
+      "username": "admin1",
+      "password": "1234",
+      "is_staff": 1,
+      "name": "홍길동",
+      "nick_name": "홍상",
+      "age": 28,
+      "gender": "남성",
+      "phone_number": "010-1234-5678",
+      "job": "변호사",
+      "interest": "기획·전략",
+      "assets_amount": 5000000,
+      "salary": 70000000,
+      "email": "admin1@webmail.net",
+      "education": "대학원"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 5,
+    "fields": {
+      "username": "user21",
+      "password": "password456",
+      "name": "김영희",
+      "nick_name": "영희",
+      "age": 32,
+      "gender": "여성",
+      "phone_number": "010-2345-6789",
+      "job": "디자이너",
+      "interest": "마케팅·홍보·조사",
+      "assets_amount": 3000000,
+      "salary": 30000000,
+      "email": "user21@webmail.net",
+      "education": "4년제"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 6,
+    "fields": {
+      "username": "user31",
+      "password": "password789",
+      "name": "이철수",
+      "nick_name": "철수",
+      "age": 25,
+      "gender": "남성",
+      "phone_number": "010-3456-7890",
+      "job": "물리치료사",
+      "interest": "회계·세무·재무",
+      "assets_amount": 2000000,
+      "salary": 35000000,
+      "email": "user31@mail.com",
+      "education": "4년제"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 7,
+    "fields": {
+      "username": "admin2",
+      "password": "1234",
+      "is_staff": 1,
+      "name": "홍길동",
+      "nick_name": "홍상",
+      "age": 28,
+      "gender": "남성",
+      "phone_number": "010-1234-5678",
+      "job": "의사",
+      "interest": "기획·전략",
+      "assets_amount": 5000000,
+      "salary": 90000000,
+      "email": "admin2@mail.com",
+      "education": "대학원"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 8,
+    "fields": {
+      "username": "user22",
+      "password": "password456",
+      "name": "김영희",
+      "nick_name": "영희",
+      "age": 32,
+      "gender": "여성",
+      "phone_number": "010-2345-6789",
+      "job": "회계사",
+      "interest": "마케팅·홍보·조사",
+      "assets_amount": 3000000,
+      "salary": 70000000,
+      "email": "user22@test.org",
+      "education": "4년제"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 9,
+    "fields": {
+      "username": "user32",
+      "password": "password789",
+      "name": "이철수",
+      "nick_name": "철수",
+      "age": 25,
+      "gender": "남성",
+      "phone_number": "010-3456-7890",
+      "job": "무직",
+      "interest": "회계·세무·재무",
+      "assets_amount": 2000000,
+      "salary": 0,
+      "email": "user32@example.com",
+      "education": "4년제"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 10,
+    "fields": {
+      "username": "admin3",
+      "password": "1234",
+      "is_staff": 1,
+      "name": "홍길동",
+      "nick_name": "홍상",
+      "age": 28,
+      "gender": "남성",
+      "phone_number": "010-1234-5678",
+      "job": "마케터",
+      "interest": "기획·전략",
+      "assets_amount": 5000000,
+      "salary": 45000000,
+      "email": "admin3@example.com",
+      "education": "대학원"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 11,
+    "fields": {
+      "username": "user23",
+      "password": "password456",
+      "name": "김영희",
+      "nick_name": "영희",
+      "age": 32,
+      "gender": "여성",
+      "phone_number": "010-2345-6789",
+      "job": "예술가",
+      "interest": "마케팅·홍보·조사",
+      "assets_amount": 3000000,
+      "salary": 30000000,
+      "email": "user23@webmail.net",
+      "education": "4년제"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 12,
+    "fields": {
+      "username": "user33",
+      "password": "password789",
+      "name": "이철수",
+      "nick_name": "철수",
+      "age": 25,
+      "gender": "남성",
+      "phone_number": "010-3456-7890",
+      "job": "파일럿",
+      "interest": "회계·세무·재무",
+      "assets_amount": 2000000,
+      "salary": 100000000,
+      "email": "user33@webmail.net",
+      "education": "대학원"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 13,
+    "fields": {
+      "username": "admin4",
+      "password": "1234",
+      "is_staff": 1,
+      "name": "홍길동",
+      "nick_name": "홍상",
+      "age": 28,
+      "gender": "남성",
+      "phone_number": "010-1234-5678",
+      "job": "요리사",
+      "interest": "기획·전략",
+      "assets_amount": 5000000,
+      "salary": 40000000,
+      "email": "admin4@webmail.net",
+      "education": "2년제"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 14,
+    "fields": {
+      "username": "user24",
+      "password": "password456",
+      "name": "김영희",
+      "nick_name": "영희",
+      "age": 32,
+      "gender": "여성",
+      "phone_number": "010-2345-6789",
+      "job": "공무원",
+      "interest": "마케팅·홍보·조사",
+      "assets_amount": 3000000,
+      "salary": 30000000,
+      "email": "user24@webmail.net",
+      "education": "4년제"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 15,
+    "fields": {
+      "username": "user34",
+      "password": "password789",
+      "name": "이철수",
+      "nick_name": "철수",
+      "age": 25,
+      "gender": "남성",
+      "phone_number": "010-3456-7890",
+      "job": "변호사",
+      "interest": "회계·세무·재무",
+      "assets_amount": 2000000,
+      "salary": 110000000,
+      "email": "user34@mail.com",
+      "education": "대학원"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 16,
+    "fields": {
+      "username": "admin5",
+      "password": "1234",
+      "is_staff": 1,
+      "name": "홍길동",
+      "nick_name": "홍상",
+      "age": 28,
+      "gender": "남성",
+      "phone_number": "010-1234-5678",
+      "job": "엔지니어",
+      "interest": "기획·전략",
+      "assets_amount": 5000000,
+      "salary": 40000000,
+      "email": "admin5@example.com",
+      "education": "대학원"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 17,
+    "fields": {
+      "username": "user25",
+      "password": "password456",
+      "name": "김영희",
+      "nick_name": "영희",
+      "age": 32,
+      "gender": "여성",
+      "phone_number": "010-2345-6789",
+      "job": "마케터",
+      "interest": "마케팅·홍보·조사",
+      "assets_amount": 3000000,
+      "salary": 32000000,
+      "email": "user25@test.org",
+      "education": "대학원"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 18,
+    "fields": {
+      "username": "user35",
+      "password": "password789",
+      "name": "이철수",
+      "nick_name": "철수",
+      "age": 25,
+      "gender": "남성",
+      "phone_number": "010-3456-7890",
+      "job": "엔지니어",
+      "interest": "회계·세무·재무",
+      "assets_amount": 2000000,
+      "salary": 40000000,
+      "email": "user35@mail.com",
+      "education": "대학원"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 19,
+    "fields": {
+      "username": "admin6",
+      "password": "1234",
+      "is_staff": 1,
+      "name": "홍길동",
+      "nick_name": "홍상",
+      "age": 28,
+      "gender": "남성",
+      "phone_number": "010-1234-5678",
+      "job": "물리치료사",
+      "interest": "기획·전략",
+      "assets_amount": 5000000,
+      "salary": 30000000,
+      "email": "admin6@example.com",
+      "education": "대학원"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 20,
+    "fields": {
+      "username": "user26",
+      "password": "password456",
+      "name": "김영희",
+      "nick_name": "영희",
+      "age": 32,
+      "gender": "여성",
+      "phone_number": "010-2345-6789",
+      "job": "신입사원",
+      "interest": "마케팅·홍보·조사",
+      "assets_amount": 3000000,
+      "salary": 32000000,
+      "email": "user26@example.com",
+      "education": "대학원"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 21,
+    "fields": {
+      "username": "user36",
+      "password": "password789",
+      "name": "이철수",
+      "nick_name": "철수",
+      "age": 25,
+      "gender": "남성",
+      "phone_number": "010-3456-7890",
+      "job": "변호사",
+      "interest": "회계·세무·재무",
+      "assets_amount": 2000000,
+      "salary": 90000000,
+      "email": "user36@mail.com",
+      "education": "대학원"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 22,
+    "fields": {
+      "username": "admin7",
+      "password": "1234",
+      "is_staff": 1,
+      "name": "홍길동",
+      "nick_name": "홍상",
+      "age": 28,
+      "gender": "남성",
+      "phone_number": "010-1234-5678",
+      "job": "인턴",
+      "interest": "기획·전략",
+      "assets_amount": 5000000,
+      "salary": 26000000,
+      "email": "admin7@webmail.net",
+      "education": "4년제"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 23,
+    "fields": {
+      "username": "user27",
+      "password": "password456",
+      "name": "김영희",
+      "nick_name": "영희",
+      "age": 32,
+      "gender": "여성",
+      "phone_number": "010-2345-6789",
+      "job": "교사",
+      "interest": "마케팅·홍보·조사",
+      "assets_amount": 3000000,
+      "salary": 45000000,
+      "email": "user27@webmail.net",
+      "education": "대학원"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 24,
+    "fields": {
+      "username": "user37",
+      "password": "password789",
+      "name": "이철수",
+      "nick_name": "철수",
+      "age": 25,
+      "gender": "남성",
+      "phone_number": "010-3456-7890",
+      "job": "회계사",
+      "interest": "회계·세무·재무",
+      "assets_amount": 2000000,
+      "salary": 60000000,
+      "email": "user37@test.org",
+      "education": "4년제"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 25,
+    "fields": {
+      "username": "admin8",
+      "password": "1234",
+      "is_staff": 1,
+      "name": "홍길동",
+      "nick_name": "홍상",
+      "age": 28,
+      "gender": "남성",
+      "phone_number": "010-1234-5678",
+      "job": "신입사원",
+      "interest": "기획·전략",
+      "assets_amount": 5000000,
+      "salary": 32000000,
+      "email": "admin8@test.org",
+      "education": "4년제"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 26,
+    "fields": {
+      "username": "user28",
+      "password": "password456",
+      "name": "김영희",
+      "nick_name": "영희",
+      "age": 32,
+      "gender": "여성",
+      "phone_number": "010-2345-6789",
+      "job": "기자",
+      "interest": "마케팅·홍보·조사",
+      "assets_amount": 3000000,
+      "salary": 32000000,
+      "email": "user28@example.com",
+      "education": "4년제"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 27,
+    "fields": {
+      "username": "user38",
+      "password": "password789",
+      "name": "이철수",
+      "nick_name": "철수",
+      "age": 25,
+      "gender": "남성",
+      "phone_number": "010-3456-7890",
+      "job": "교사",
+      "interest": "회계·세무·재무",
+      "assets_amount": 2000000,
+      "salary": 40000000,
+      "email": "user38@test.org",
+      "education": "4년제"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 28,
+    "fields": {
+      "username": "admin9",
+      "password": "1234",
+      "is_staff": 1,
+      "name": "홍길동",
+      "nick_name": "홍상",
+      "age": 28,
+      "gender": "남성",
+      "phone_number": "010-1234-5678",
+      "job": "공무원",
+      "interest": "기획·전략",
+      "assets_amount": 5000000,
+      "salary": 30000000,
+      "email": "admin9@test.org",
+      "education": "2년제"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 29,
+    "fields": {
+      "username": "user29",
+      "password": "password456",
+      "name": "김영희",
+      "nick_name": "영희",
+      "age": 32,
+      "gender": "여성",
+      "phone_number": "010-2345-6789",
+      "job": "엔지니어",
+      "interest": "마케팅·홍보·조사",
+      "assets_amount": 3000000,
+      "salary": 60000000,
+      "email": "user29@mail.com",
+      "education": "대학원"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 30,
+    "fields": {
+      "username": "user39",
+      "password": "password789",
+      "name": "이철수",
+      "nick_name": "철수",
+      "age": 25,
+      "gender": "남성",
+      "phone_number": "010-3456-7890",
+      "job": "엔지니어",
+      "interest": "회계·세무·재무",
+      "assets_amount": 2000000,
+      "salary": 50000000,
+      "email": "user39@webmail.net",
+      "education": "4년제"
+    }
+  }
+]

@@ -1,0 +1,385 @@
+
+/* 전체 레이아웃 */
+.page-container {
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 방향 중앙 정렬 */
+  align-items: center; /* 가로 방향 중앙 정렬 */
+  padding: 20px;
+  width: 1500px; /* 고정된 너비 설정 */
+  font-family: 'Dancing Script';
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+/* 왼쪽과 오른쪽 영역 */
+.left-right-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: nowrap; /* 줄 바꿈 방지 */
+  align-items: flex-start;
+  height: 1000px; /* 고정된 높이 설정 */
+}
+
+/* 오른쪽 영역 (right-side) */
+.right-side {
+  flex: 0 0 35%; /* 오른쪽 영역 비율 설정 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%; /* 캘린더와 동일한 높이로 고정 */
+  justify-content: flex-start; /* 내용이 위쪽에 배치되도록 설정 */
+  align-items: center; /* 내부 요소들을 가로로 중앙 정렬 */
+  width: 100%; /* right-side를 화면의 100% 너비로 확장 */
+}
+
+
+/* Top 5 박스 (채용공고와 지원정보) */
+.top-jobs, .top-supports {
+  
+  width: 100%; /* 부모의 가로 너비에 맞추도록 설정 */
+  padding: px;
+  border-radius: 10px;
+  background-color: #fff;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  /* overflow-y: auto; 내용이 많을 경우 스크롤 추가 */
+  height: 100%; /* 부모 요소 높이에 맞춰서 100% */
+  border: none;
+  margin: 0 auto; /* 중앙 정렬 */
+  font-size: 14px;
+}
+
+.top-jobs:hover, .top-supports:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Hover 시 그림자 강조 */
+}
+
+/* 캘린더 헤더 스타일 (Calendar View와 버튼) */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.calendar-header h1 {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.calendar-header button {
+  background-color: transparent;
+  color: #333;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  background-color: #ffffff;
+}
+
+.calendar-header button:hover {
+  background-color: #FFDD00; /* hover 시 색상 */
+}
+.calendar-header button:focus {
+  outline: none;
+}
+
+/* 오른쪽 영역: 채용공고 및 지원정보 */
+.right-side {
+  flex: 1 1 35%; /* 오른쪽 영역 비율 설정 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%; /* 최소 높이 설정 (캘린더와 맞추기) */
+  justify-content: space-between; /* 내용이 위아래로 균등하게 배치되도록 설정 */
+}
+
+/* 카테고리 스타일 (채용공고, 지원정보) */
+.top-jobs, .top-supports {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+
+  transition: box-shadow 0.3s ease;
+}
+
+.vc-container.vc-bordered {
+  border: #ccb26b
+}
+
+
+.top-jobs:hover, .top-supports:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* hover 시 그림자 강조 */
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #333;
+  /* margin-bottom: 30px; */
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+    margin-bottom: 14px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* 세로 중앙 */
+  }
+  
+
+#top5title {
+    margin-top: 24px;
+    font-weight: bolder;
+    
+}
+
+
+
+/* 버튼 스타일 */
+#top5button {
+  background-color: #fff29d; /* 테마 색상 */
+  color: #333;
+  margin-left: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0; /* 버튼이 줄어들지 않도록 설정 */
+  width: 80px; /* 고정된 너비 */
+  height: 60px; /* 고정된 높이 */
+  font-weight: bold;
+  
+  display: flex;  /* 플렉스박스로 설정 */
+  align-items: center;  /* 세로 중앙 정렬 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+#top5button:hover {
+  background-color: #FFDD00; /* hover 시 색상 */
+}
+#top5button :focus {
+  outline: none;
+}
+.vc-title {
+    width: 100px;
+    height: 30px;
+    align-items: center;  /* 세로 중앙 */
+    justify-content: center; /* 가로 중앙 */
+    font-size: 15px;
+    background-color: #fff29d;
+}
+
+.vc-arrow {
+    background-color: #fff29d;
+}
+
+/* 버튼 hover 스타일 */
+.vc-arrow:hover, .vc-next:hover, .vc-focus:hover, .vc-title-wrapper button:hover {
+    background-color: #FFDD00 !important; /* hover 시 배경색 */
+}
+
+
+
+.vc-base-icon:hover {
+    stroke: rgb(121, 107, 70); /* 호버 시 선 색상을 갈색으로 변경 */
+  }
+
+
+
+/* 캘린더 셀 스타일 */
+.day-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 141.5px;
+  
+  width: 143px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+
+}
+
+.day-cell:hover {
+  background-color: #FFFDDD; /* 셀 hover 시 색상 변경 */
+}
+
+/* 날짜 숫자 스타일 */
+.day-number {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* 링크 스타일 */
+.job-title-link {
+  font-size: 13px;
+  text-decoration: underline;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none
+}
+
+        
+.job-title-link {
+font-size: 14px; /* 조금 더 큰 폰트 사이즈 */
+font-weight: 500; /* 더 굵은 폰트로 가독성 높임 */
+color: #333; /* 기본 텍스트 색상 */
+text-decoration: none; /* 밑줄 제거 */
+cursor: pointer;
+transition: color 0.3s ease, transform 0.3s ease; /* 색상과 크기 변화에 부드러운 애니메이션 추가 */
+padding: 4px 6px; /* 링크 주위에 여백을 추가 */
+border-radius: 4px; /* 링크에 둥근 모서리 추가 */
+}
+
+.job-title-link.start {
+  color: #d8a22d /* start 타입에 색상 */
+}
+
+.job-title-link.end {
+  color:#f07474    /* end 타입에 색상 */
+}
+
+.job-title-link:hover {
+  font-weight: bold;
+  color: #444;
+}
+
+
+
+/* 공통 모달 스타일 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 배경을 반투명 검정으로 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* 다른 콘텐츠 위에 표시되도록 */
+  }
+  
+  /* 모달 콘텐츠 스타일 */
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* 부드러운 그림자 */
+    animation: fadeIn 0.3s ease-out; /* 모달이 부드럽게 나타나도록 */
+    text-align: center; /* 내용 중앙 정렬 */
+  }
+
+  .modal-content a {
+    background-color: #fff29d;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* 버튼 스타일 */
+  /* .btn {
+    background-color: #fff29d;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin: 10px 0;
+  } */
+  
+  .btn:hover {
+    background-color: #ffdd00; /* 호버 시 색상 변경 */
+  }
+  
+  .btn-close {
+    
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .btn-close:hover {
+    background-color: #ff5555;
+  }
+  
+  .btn-delete {
+    background-color: #ff5555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .btn-delete:hover {
+    background-color: #ff3333;
+  }
+  
+  .btn-update {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .btn-update:hover {
+    background-color: #45a049;
+  }
+  
+  /* 애니메이션: 모달이 부드럽게 나타나는 효과 */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px); /* 위에서 내려오는 효과 */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* X 버튼 */
+  .btn-close span {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: transparent; /* X 버튼 색상 제거 */
+  }
+  
+  /* 모달 내부 텍스트 스타일 (필요시) */
+  .modal-content p {
+    margin: 10px 0;
+  }
+  
+
