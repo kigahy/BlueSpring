@@ -46,11 +46,10 @@
     - 데이터 가공, 백엔드 설정, 프론트엔드와 연결, CSS작업을 모두 해봄으로서 풀스택 개발자가 되기 위한 자질을 함양
 
 ### 작업물 시각화
-[Figma](https://www.figma.com/design/Z6HB6NGXRa6lKCZkQsTLuw/Untitled?node-id=0-1&node-type=canvas&t=2MRQ9STejjqLyHMs-0)
+- ERD
+![alt text](readme_data/erd.png)
+- Figma
 ![alt text](image.png)
-
-[ERD](https://app.diagrams.net/#G19kt0rJlU4u5uKB3m560gBp1iIukp5R3t)
-![alt text](image-1.png)
 
 ## 협업 작업시 기억할 점
 - 작업 시작하기 전 꼭 pull받고 시작하기
