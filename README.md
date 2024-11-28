@@ -1,11 +1,11 @@
 # [작전명 청춘] 청년을 위한 맞춤 정보 플랫폼
 
 ### 프로젝트 개요
-- SSAFY 12기 1학기 관통프로젝트
+- 삼성 청년 SW아카데미(SSAFY) 12기 관통프로젝트
 - 2인 제작, 2024-11-18 ~ 2024-11-27
 
 ### 프로젝트의 목표
-- "청년"이라는 큰 틀 아래에서 청년을 위한 웹사이트 개설.
+- "청년"이라는 큰 틀 아래에서 취업준비생, 이직준비생, 직장인에게 도움이 되는 웹사이트 개설.
 - 취업준비생 및 이직준비인을 위한 채용공고, 직장인을 위한 거래내역에 따른 예적금 상품추천, 금융 뉴스 및 시장 정보를 확인할 수 있다.
 
 ### 기술 스택 및 사용 데이터
@@ -45,7 +45,7 @@
 5. 작업 단위별로 나누어서 각자 프론트와 백을 모두 진행
     - 데이터 가공, 백엔드 설정, 프론트엔드와 연결, CSS작업을 모두 해봄으로서 풀스택 개발자가 되기 위한 자질을 함양
 
-### 작업물
+### 작업물 시각화
 [Figma](https://www.figma.com/design/Z6HB6NGXRa6lKCZkQsTLuw/Untitled?node-id=0-1&node-type=canvas&t=2MRQ9STejjqLyHMs-0)
 ![alt text](image.png)
 
@@ -58,7 +58,7 @@
 - makemigrations migrate한 다음 꼭 loaddata 진행하기
 - 하나의 작업이 끝나면 페어에게 push한다고 반드시 알리기
 
-## 타임라인
-- 1121 Vcalendar 기능 구현 완료
+## 참고
+- 1121 Vcalendar 기능 구현
     - `npm install v-calendar`
     - `https://vcalendar.io/getting-started/installation.html`

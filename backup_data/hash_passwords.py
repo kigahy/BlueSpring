@@ -1,3 +1,5 @@
+# 유저 패스워드 해시처리하는 코드
+
 import os
 import django
 from django.contrib.auth.hashers import make_password
